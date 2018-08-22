@@ -2,7 +2,7 @@
 <section id="reservaciones">
   
   <div style="width:100%; color:white" align="center" class="bg-dark">
-    <img src="img/ico-reservaciones.png" style="margin-top: 150px">
+    <img src="image/ico-reservaciones.png" style="margin-top: 150px">
     <h1>Reservaciones</h1>
     <p><strong>Reserve su mesa</strong></p>
     <br>

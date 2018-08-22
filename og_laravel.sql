@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-08-2018 a las 18:47:57
+-- Tiempo de generación: 21-08-2018 a las 16:59:49
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -434,12 +434,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Malcolm Nitzsche', 'hackett.eda@example.com', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', 'PPDKkYg5IL', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
-(2, 'Kaci Welch', 'bbailey@example.com', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', '2zKuhsZZgv', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
-(3, 'Dr. Elisabeth Zemlak', 'torp.caleigh@example.com', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', 'HmKgu34PiC', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
-(4, 'Ms. Queen Kohler MD', 'homenick.luis@example.com', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', 'zUXJP2jZ2e', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
-(5, 'Ms. Catherine Kshlerin V', 'belle.metz@example.net', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', '72z2H157E9', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
-(6, 'omorenotorres', 'omorenotorres@hotmail.com', '$2y$10$d372wjRje2mDEr0w3M0iv.NVBLgwNPSfh/aWY7.9bJ1ADQnijOsL2', 'a6p7tQZWkQqKF860BkezHmZdG9gsZ466GodC65v8yhzNNYZ9uwMHWdbOCIBX', '2018-08-17 23:50:10', '2018-08-17 23:50:10');
+(6, 'omorenotorres', 'omorenotorres@hotmail.com', '$2y$10$d372wjRje2mDEr0w3M0iv.NVBLgwNPSfh/aWY7.9bJ1ADQnijOsL2', 'a8XXOGZugVBwAurpJ0cYKoaPSCtxnbXcD7xjjMDJmdVY7wsA2JMek3OiiL7b', '2018-08-17 23:50:10', '2018-08-17 23:50:10'),
+(7, 'admin', 'adminog@hotmail.com', '$2y$10$eO/Wqta.8OdIeVyAfY4DieBKABP5f2o5XojwlbOxSht03xZzCPToe', NULL, '2018-08-21 18:43:02', '2018-08-21 18:43:02'),
+(8, 'nuevo', 'nuevo@nuevo.com', '$2y$10$1d15Bxx86xppONUwS3eYd.aC0M3b/rQOadpHq9VBE39pZGcJ7uOJS', 'sa5sr6zO8k1FmgMBFlQ5WtzDnE4YwAyZRhp4nzEGj2Eq7sdBEDZDH193ilai', '2018-08-21 18:53:08', '2018-08-21 18:56:26'),
+(9, 'orlando', 'orlando@hotmail.com', '$2y$10$fXkZzar.8diORiYdqlO5Z.148SxRahwjJbsi2l7tXYQj.pqQbx3Ba', 'QnvASOiQHZnw8HffNzI8d9C0EOYYo7DIfUykHG2InkuMD9um1Xjd1W5xSQnl', '2018-08-21 18:55:12', '2018-08-21 18:55:12');
 
 --
 -- Índices para tablas volcadas
@@ -562,7 +560,7 @@ ALTER TABLE `tplatos`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

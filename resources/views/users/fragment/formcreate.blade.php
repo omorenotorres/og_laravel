@@ -7,10 +7,10 @@
 	{!! Form::label('email', 'EMAIL') !!}
 	{!! Form::text('email', null, ['class' => 'form-control']) !!}
 </div>
-
+<br>
 <div  class="form-group">
 	{!! Form::label('password', 'CLAVE') !!}
-	{!! Form::text('password', null, ['class' => 'form-control']) !!}
+	{!! Form::password('password', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
