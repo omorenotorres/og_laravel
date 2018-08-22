@@ -1,0 +1,10 @@
+@extends('layouts.principal')
+    @section('content')
+        @include('layouts.carousel')
+        @include('layouts.nosotros')
+        @include('layouts.carta')
+        @include('layouts.buffet')
+        @include('layouts.promociones')
+        @include('layouts.contactos')
+        @include('layouts.reservas')
+    @endsection
