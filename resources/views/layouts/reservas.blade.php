@@ -25,11 +25,11 @@
 
       <input type="email" id="correo" name="correo" placeholder="CORREO" class="input-100" required>
 
-      <input type="number" id="hora" name="hora" placeholder="HORA" class="input-100" required>
+      <input type="number" id="hora" name="hora" placeholder="HORA" class="input-100" min="9" max="23" required>
 
       <input type="date" id="fecha" name="fecha" placeholder="FECHA" class="input-100" required>
       
-      <input type="number" id="comensales" name="comensales" placeholder="COMENSALES" class="input-100" required>
+      <input type="number" id="comensales" name="comensales" placeholder="COMENSALES" class="input-100" min="1" max="100"required>
 
       <input type="number" id="telefono" name="telefono" placeholder="TELEFONO" class="input-100" required>
 

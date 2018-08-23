@@ -25,7 +25,7 @@ class ContactoRequest extends FormRequest
     {
         return [
             //
-            'co_imagen'        =>  'required',
+            'co_imagen'        =>  'mimes:jpg,jpeg,png,gif',
             'co_descripcion'        =>  'required',
             'co_informacion'        =>  'required',
         ];

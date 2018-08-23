@@ -27,7 +27,7 @@ class PromoRequest extends FormRequest
             //
             'p_titulo'        =>  'required',
             'p_descripcion'   =>  'required',
-            'p_imagen'        =>  'required',
+            'p_imagen'        =>  'mimes:jpg,jpeg,png,gif',
         ];
     }
 }

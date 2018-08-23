@@ -46,7 +46,7 @@ function validar(){
 		alert("El teléfono ingresado no es un numero");
 		return false;		
 	}
-	else if(isNaN(hora)) {
+	else if(isNaN(hora) & (hora >= 9) & (hora <= 23)) {
 		alert("La hora ingresada no es un numero");
 		return false;		
 	}

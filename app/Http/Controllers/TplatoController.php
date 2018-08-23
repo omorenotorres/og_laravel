@@ -108,7 +108,7 @@ class TplatoController extends Controller
         //
         //return 'TIPO DE PLATO ACTUALIZADO ' . $id;
         $tplato = Tplato::find($id);
-
+        //$tplato_aux = $tplato;
         $tplato ->tp_codigo = $request->tp_codigo;
         $tplato ->tp_descripcion   =   $request->tp_descripcion;
         $tplato ->tp_imagen    =   $request->tp_imagen;
@@ -119,7 +119,18 @@ class TplatoController extends Controller
            $path = Storage::disk('public')->put('image', $request->file('tp_imagen'));
            $tplato->fill(['tp_imagen' => asset($path)])->save();
         }
+//
+        /*$menus = menu::where('tipo_plato',$tplato_aux->tp_codigo)->paginate(500);
+        return view('menus.index2', compact('menus'));
 
+        foreach($menus as $menu){
+        	$menu->tipo_plato = $request->tp_codigo;
+        	$menu->item = $menu->item;
+        	$menu->descripcion_item = $menu->descripcion_item;
+        	$menu->precio_item = $menu->precio_item;
+        	$menu->save();
+        }*/
+//
 
         return redirect()->route('tplatos.index')->with('info', 'El "Tipo de Plato" fue actualizado');
     }

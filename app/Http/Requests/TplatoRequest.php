@@ -27,7 +27,7 @@ class TplatoRequest extends FormRequest
             //
             'tp_codigo'        =>  'required',
             'tp_descripcion'        =>  'required',
-            'tp_imagen'        =>  'required',
+            'tp_imagen'        =>  'mimes:jpg,jpeg,png,gif',
         ];
     }
 }
