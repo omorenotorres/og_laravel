@@ -13,17 +13,26 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
+        
         Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('tipo_plato');
+            $table->integer('tipo_plato')->unsigned();
             $table->text('item');
             $table->text('descripcion_item');
             $table->decimal('precio_item');
 
             $table->timestamps();
+
+            /*$table->foreign('tipo_plato')->references('tp_codigo')->on('tplatos')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');*/
+
+
         });
+
     }
+
 
     /**
      * Reverse the migrations.

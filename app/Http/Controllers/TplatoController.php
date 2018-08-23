@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Tplato;
+use App\Menu;
 use App\Http\Requests\TplatoRequest;
 use Storage;
 
@@ -26,7 +27,7 @@ class TplatoController extends Controller
     {
         //
         //return 'INDEX - TIPO DE PLATOS';
-        $tplatos= tplato::orderBy('tp_codigo','ASC')->paginate(5);
+        $tplatos = tplato::orderBy('tp_codigo','ASC')->paginate(5);
         return view('tplatos.index', compact('tplatos'));
 
     }
@@ -132,9 +133,21 @@ class TplatoController extends Controller
     public function destroy($id)
     {
         //
-        $tplato = Tplato::find($id);
-        $tplato->delete();
+        ///$tplato = Tplato::find($id);
 
+        /*$menus = Menu::where('tipo_plato', $tplato->tp_codigo);
+        foreach ($menus as $menu){
+            $menu->delete();
+        }*/
+
+
+		///$tplato->delete();
+		///return back()->with('info','El "Tipo de Plato" fue eliminado');
+     
+        $tplato = Tplato::find($id);
+        $menus = menu::where('tipo_plato',$tplato->tp_codigo);
+        $menus->delete();
+        $tplato->delete();
         return back()->with('info','El "Tipo de Plato" fue eliminado');
 
     }

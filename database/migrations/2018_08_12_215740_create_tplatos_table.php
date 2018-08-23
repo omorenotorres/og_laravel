@@ -16,11 +16,13 @@ class CreateTplatosTable extends Migration
         Schema::create('tplatos', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('tp_codigo');
+            $table->integer('tp_codigo')->unsigned();
             $table->string('tp_descripcion');
             $table->text('tp_imagen');
 
             $table->timestamps();
+
+
         });
     }
 
